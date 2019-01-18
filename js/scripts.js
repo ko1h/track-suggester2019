@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     if (interestInput === "front-end" && devInput === "software") {
       $("#cs").show()
-      $(".nameInsert").text(nameInput)
+      $("#nameInsert").text(nameInput)
       $("#emailInsert").text(emailInput)
       $("#ruby").hide()
       $("#php").hide()
