@@ -9,8 +9,8 @@ $(document).ready(function() {
 
     if (interestInput === "front-end" && devInput === "software") {
       $("#cs").show()
-      $("#nameInsert").text(nameInput)
-      $("#emailInsert").text(emailInput)
+      $(".nameInsert").text(nameInput)
+      $(".emailInsert").text(emailInput)
       $("#ruby").hide()
       $("#php").hide()
       $("#java").hide()
@@ -18,7 +18,7 @@ $(document).ready(function() {
     else if (interestInput === "front-end" && devInput === "app") {
       $("#ruby").show()
       $(".nameInsert").text(nameInput)
-      $("#emailInsert").text(emailInput)
+      $(".emailInsert").text(emailInput)
       $("#cs").hide()
       $("#php").hide()
       $("#java").hide()
@@ -26,7 +26,7 @@ $(document).ready(function() {
     else if (interestInput === "front-end" && devInput === "website") {
       $("#java").show()
       $(".nameInsert").text(nameInput)
-      $("#emailInsert").text(emailInput)
+      $(".emailInsert").text(emailInput)
       $("#cs").hide()
       $("#php").hide()
       $("#ruby").hide()
@@ -34,7 +34,7 @@ $(document).ready(function() {
     else if (interestInput === "back-end" && devInput === "app") {
       $("#php").show()
       $(".nameInsert").text(nameInput)
-      $("#emailInsert").text(emailInput)
+      $(".emailInsert").text(emailInput)
       $("#cs").hide()
       $("#java").hide()
       $("#ruby").hide()
@@ -42,7 +42,7 @@ $(document).ready(function() {
     else if (interestInput === "back-end" && devInput === "website") {
       $("#ruby").show()
       $(".nameInsert").text(nameInput)
-      $("#emailInsert").text(emailInput)
+      $(".emailInsert").text(emailInput)
       $("#cs").hide()
       $("#php").hide()
       $("#java").hide()
@@ -50,13 +50,13 @@ $(document).ready(function() {
     else if (interestInput === "back-end" && devInput === "software") {
       $("#cs").show()
       $(".nameInsert").text(nameInput)
-      $("#emailInsert").text(emailInput)
+      $(".emailInsert").text(emailInput)
       $("#java").hide()
       $("#php").hide()
       $("#ruby").hide()
     }
     else {
-      alert("please choose from the choices")
+      alert("please fill in the question")
     }
   });
 });
