@@ -13,7 +13,26 @@
         <h1>Track Suggester</h1>
         <p>Get to know a little more about the coures you can take at epicodus</p>
       </div>
-
+      <form id="track">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input id="email" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="comment">Comments or Questions?</label>
+            <input id="comment" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="interests">front-end or back-end development?</label>
+            <select id="interests" class="form-control">
+              <option>Please Choose </option>
+              <option value="front-end">Front-end </option>
+              <option value="back-end">Back-end</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Submit!</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
