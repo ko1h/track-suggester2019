@@ -10,13 +10,13 @@ body {
 
 }
 .jumbotron {
-  background-image: url("../img/computer.jpeg");
-  background-position: center;
+  background-image: url("../img/macbook.jpeg");
   height: 400px;
+  background-position: center;
   background-size: cover;
   padding-top: 10px;
   padding-bottom: 10px;
-  text-align: center;
+  color: white;
 }
 .btn {
   border: solid;
@@ -32,7 +32,7 @@ body {
 #emailInsert {
   text-decoration: underline;
 }
-#trackInsert{
+#nameInsert{
   font-color: #82CAFF;
   font-family: sans-serif;
-  text-d
+}

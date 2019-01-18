@@ -36,22 +36,22 @@ $(document).ready(function() {
       $(".nameInsert").text(nameInput)
       $("#emailInsert").text(emailInput)
       $("#cs").hide()
-      $("#php").hide()
+      $("#java").hide()
       $("#ruby").hide()
     }
     else if (interestInput === "back-end" && devInput === "website") {
-      $("#java").show()
+      $("#ruby").show()
       $(".nameInsert").text(nameInput)
       $("#emailInsert").text(emailInput)
       $("#cs").hide()
       $("#php").hide()
-      $("#ruby").hide()
+      $("#java").hide()
     }
     else if (interestInput === "back-end" && devInput === "software") {
-      $("#java").show()
+      $("#cs").show()
       $(".nameInsert").text(nameInput)
       $("#emailInsert").text(emailInput)
-      $("#cs").hide()
+      $("#java").hide()
       $("#php").hide()
       $("#ruby").hide()
     }
