@@ -1,7 +1,12 @@
+body {
+  background-color: #61B0B0;
+  color: #747474;
+}
 .container {
   border: solid;
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: white;
 
 }
 .jumbotron {
@@ -15,9 +20,13 @@
 }
 .btn {
   border: solid;
+  background-color: #AAD5D5;
 }
 #cs, #ruby, #php, #java {
   display: none;
+}
+#result {
+  margin: 30px 30px;
 }
 
 #emailInsert {
