@@ -23,5 +23,40 @@ $(document).ready(function() {
       $("#php").hide()
       $("#java").hide()
     }
+    else if (interestInput === "front-end" && devInput === "website") {
+      $("#java").show()
+      $(".nameInsert").text(nameInput)
+      $("#emailInsert").text(emailInput)
+      $("#cs").hide()
+      $("#php").hide()
+      $("#ruby").hide()
+    }
+    else if (interestInput === "back-end" && devInput === "app") {
+      $("#php").show()
+      $(".nameInsert").text(nameInput)
+      $("#emailInsert").text(emailInput)
+      $("#cs").hide()
+      $("#php").hide()
+      $("#ruby").hide()
+    }
+    else if (interestInput === "back-end" && devInput === "website") {
+      $("#java").show()
+      $(".nameInsert").text(nameInput)
+      $("#emailInsert").text(emailInput)
+      $("#cs").hide()
+      $("#php").hide()
+      $("#ruby").hide()
+    }
+    else if (interestInput === "back-end" && devInput === "software") {
+      $("#java").show()
+      $(".nameInsert").text(nameInput)
+      $("#emailInsert").text(emailInput)
+      $("#cs").hide()
+      $("#php").hide()
+      $("#ruby").hide()
+    }
+    else {
+      alert("please choose from the choices")
+    }
   });
 });

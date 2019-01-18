@@ -7,10 +7,10 @@
 .jumbotron {
   background-image: url("../img/computer.jpeg");
   background-position: center;
+  height: 400px;
   background-size: cover;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: white;
   text-align: center;
 }
 .btn {
