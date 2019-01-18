@@ -15,12 +15,13 @@ ines (29 sloc)  479 Bytes
 .btn {
   border: solid;
 }
-#results {
+#cs, #ruby, #php, #java {
   display: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 20px;
 }
+#rudy {
+  display: none;
+}
+
 #emailInsert {
   text-decoration: underline;
 }
