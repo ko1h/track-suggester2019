@@ -22,11 +22,16 @@ body {
   border: solid;
   background-color: #AAD5D5;
 }
+.color{
+  color: #61B0B0;
+  font-weight: bold;
+}
 #cs, #ruby, #php, #java {
   display: none;
 }
 #result {
   margin: 30px 30px;
+  font-size: 1.5em;
 }
 
 #emailInsert {
