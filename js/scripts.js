@@ -7,6 +7,21 @@ $(document).ready(function() {
     var interestInput = $("select#interests").val();
     var devInput = $("select#dev").val();
 
-
+    if (interestInput === "front-end" && devInput === "software") {
+      $("#cs").show()
+      $(".nameInsert").text(nameInput)
+      $("#emailInsert").text(emailInput)
+      $("#ruby").hide()
+      $("#php").hide()
+      $("#java").hide()
+    }
+    else if (interestInput === "front-end" && devInput === "app") {
+      $("#ruby").show()
+      $(".nameInsert").text(nameInput)
+      $("#emailInsert").text(emailInput)
+      $("#cs").hide()
+      $("#php").hide()
+      $("#java").hide()
+    }
   });
 });

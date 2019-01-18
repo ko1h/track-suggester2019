@@ -8,19 +8,19 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
+    <div class="container ">
+      <div class="jumbotron container-fluid">
         <h1>Track Suggester</h1>
         <p>Get to know a little more about the coures you can take at epicodus</p>
       </div>
       <form id="track">
         <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
             <label for="email">Email:</label>
             <input id="email" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="name">name?</label>
-            <input id="name" class="form-control" type="text">
           </div>
           <div class="form-group">
             <label for="interests">front-end or back-end development?</label>
@@ -42,7 +42,7 @@
           <button type="submit" class="btn">Submit!</button>
         </form>
         <div id="cs">
-          <p>"the track c# should be a great choice for you"</p>
+          <p>"the track c# <span class="nameInsert"></span> should be a great choice for you"</p>
         </div>
         <div id="ruby">
           <p>"the track ruby should be a great choice for you"</p>
