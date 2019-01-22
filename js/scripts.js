@@ -4,10 +4,12 @@ $(document).ready(function() {
 
     var nameInput = $("input#name").val();
     var emailInput = $("input#email").val();
-    var interestInput = $("select#interests").val();
-    var devInput = $("select#dev").val();
+    var interestInput = parseInt($("select#interests").val());
+    var devInput = parseInt($("select#dev").val());
+    var timeInput = parseInt($("select#time").val());
+    var total = interestInput + devInput + timeInput;
 
-    if (interestInput === "front-end" && devInput === "software") {
+    if (total <= 10) {
       $("#cs").show()
       $(".nameInsert").text(nameInput)
       $(".emailInsert").text(emailInput)
@@ -15,7 +17,7 @@ $(document).ready(function() {
       $("#php").hide()
       $("#java").hide()
     }
-    else if (interestInput === "front-end" && devInput === "app") {
+    else if (total > 11 && total <= 15 ) {
       $("#ruby").show()
       $(".nameInsert").text(nameInput)
       $(".emailInsert").text(emailInput)
@@ -23,7 +25,7 @@ $(document).ready(function() {
       $("#php").hide()
       $("#java").hide()
     }
-    else if (interestInput === "front-end" && devInput === "website") {
+    else if (total > 15 && total <= 20) {
       $("#java").show()
       $(".nameInsert").text(nameInput)
       $(".emailInsert").text(emailInput)
@@ -31,28 +33,12 @@ $(document).ready(function() {
       $("#php").hide()
       $("#ruby").hide()
     }
-    else if (interestInput === "back-end" && devInput === "app") {
+    else if ( total >= 21 && total < 30) {
       $("#php").show()
       $(".nameInsert").text(nameInput)
       $(".emailInsert").text(emailInput)
       $("#cs").hide()
       $("#java").hide()
-      $("#ruby").hide()
-    }
-    else if (interestInput === "back-end" && devInput === "website") {
-      $("#ruby").show()
-      $(".nameInsert").text(nameInput)
-      $(".emailInsert").text(emailInput)
-      $("#cs").hide()
-      $("#php").hide()
-      $("#java").hide()
-    }
-    else if (interestInput === "back-end" && devInput === "software") {
-      $("#cs").show()
-      $(".nameInsert").text(nameInput)
-      $(".emailInsert").text(emailInput)
-      $("#java").hide()
-      $("#php").hide()
       $("#ruby").hide()
     }
     else {
