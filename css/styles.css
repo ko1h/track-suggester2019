@@ -34,11 +34,6 @@ body {
   margin: 30px 30px;
   font-size: 1.5em;
 }
-
 #emailInsert {
   text-decoration: underline;
-}
-#nameInsert{
-  font-color: #82CAFF;
-  font-family: sans-serif;
 }
